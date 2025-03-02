@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Navbar */
+header {
+    background: black;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+@keyframes header {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+    background: #f39c12;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Projects */
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+    border: 4px black;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bolder ;
+}
+
+.fade-in1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    gap: 10px;
+}
+
+.intro-fade-in{
+    border-radius: 20%;
+    margin-top: 100px;
+}
+
+.slide-in {
+    position:fixed;
+    width: 100%;
+    height: 500px;
+    background-color:lightslategray ; /* Ensure correct path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:block;
+    align-items: center;
+    color:#f4f4f4;
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 90px;
+    
+}
+
+.contact{
+   position: fixed;
+   bottom: 0px;
+   margin: auto;
+   margin-left: 500px;
+   
+}
+
+.Skills{
+    list-style-type: none;
+    align-items: center;
+}
+
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.typing-text{
+    margin-left: 400px;
+}
+
+.skill-bar {
+    background: #ddd;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.skill-fill {
+    height: 10px;
+    background: #ff9800;
+    border-radius: 5px;
+    width: 80%;
+    animation: fillSkill 2s ease-in-out;
+}
+
+@keyframes fillSkill {
+    from { width: 0; }
+    to { width: 80%; }
+}
+
